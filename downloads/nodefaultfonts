@@ -1,9 +1,0 @@
-{
-  "name": "No Default Fonts",
-  "version": "1.0.0",
-  "description": "Change the font on any website to your preferred typeface.",
-  "matches": ["*://*/*"],
-  "css": ["style.css"],
-  "js": ["script.js"],
-  "enabled": true
-}
