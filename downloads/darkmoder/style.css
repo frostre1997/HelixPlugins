@@ -1,0 +1,12 @@
+/* Invert colors */
+html {
+  filter: invert(1) hue-rotate(180deg);
+}
+/* Keep images/videos normal */
+img, video, iframe, [style*="background-image"] {
+  filter: invert(1) hue-rotate(180deg);
+}
+/* Prevent double inversion on backgrounds */
+body {
+  background: #fff;
+}
