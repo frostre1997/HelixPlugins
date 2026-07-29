@@ -5,8 +5,8 @@
         "version": "1.0.0",
         "description": "Force dark theme on every website. Inverts colors and reduces eye strain at night.",
         "author": "Helix Team",
-        "icon": "test",
-        "downloadUrl": "/downloads/dark-mode.zip",
+        "icon": "🌙",
+        "downloadUrl": "/downloads/darkmoder.zip",
         "tags": ["theme", "accessibility", "night"]
     },
     {
@@ -15,8 +15,8 @@
         "version": "1.0.0",
         "description": "Block annoying ads and trackers. Faster page loads and better privacy.",
         "author": "Helix Team",
-        "icon": "test1",
-        "downloadUrl": "/downloads/adblock.zip",
+        "icon": "🛡️",
+        "downloadUrl": "/downloads/nomoreads.zip",
         "tags": ["privacy", "performance", "security"]
     },
     {
@@ -26,7 +26,7 @@
         "description": "Change the font on any website to your preferred typeface.",
         "author": "HelixPlugins",
         "icon": "🔤",
-        "downloadUrl": "/downloads/font-changer.zip",
+        "downloadUrl": "/downloads/nodefaultfonts.zip",
         "tags": ["customization", "accessibility"]
     },
     {
@@ -36,7 +36,7 @@
         "description": "Capture full-page screenshots with one click. Save or share instantly.",
         "author": "Helix Team",
         "icon": "📸",
-        "downloadUrl": "/downloads/screenshot.zip",
+        "downloadUrl": "/downloads/easyshots.zip",
         "tags": ["tools", "sharing"]
     },
     {
@@ -46,7 +46,7 @@
         "description": "Strip away clutter and read articles in a clean, distraction-free layout.",
         "author": "HelixPlugins",
         "icon": "📖",
-        "downloadUrl": "/downloads/reader-mode.zip",
+        "downloadUrl": "/downloads/lightreader.zip",
         "tags": ["reading", "productivity"]
     }
 ]
