@@ -1,0 +1,9 @@
+{
+  "name": "Easyshots",
+  "version": "1.0.0",
+  "description": "Capture full-page screenshots with one click. Save or share instantly.",
+  "matches": ["*://*/*"],
+  "css": ["style.css"],
+  "js": ["script.js"],
+  "enabled": true
+}
