@@ -1,0 +1,4 @@
+/* Default font override – user can edit this file */
+* {
+  font-family: 'Comic Sans MS', 'Chalkboard SE', cursive, sans-serif !important;
+}
