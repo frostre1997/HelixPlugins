@@ -1,38 +1,38 @@
 [
     {
-        "id": "dark-mode",
-        "name": "Dark Mode",
-        "version": "1.2.0",
+        "id": "darkmoder",
+        "name": "DarkModer",
+        "version": "1.0.0",
         "description": "Force dark theme on every website. Inverts colors and reduces eye strain at night.",
         "author": "Helix Team",
-        "icon": "🌙",
+        "icon": "test",
         "downloadUrl": "/downloads/dark-mode.zip",
         "tags": ["theme", "accessibility", "night"]
     },
     {
-        "id": "adblock",
-        "name": "AdBlocker Pro",
-        "version": "2.0.1",
+        "id": "nomoreads",
+        "name": "NoMoreAds",
+        "version": "1.0.0",
         "description": "Block annoying ads and trackers. Faster page loads and better privacy.",
         "author": "Helix Team",
-        "icon": "🛡️",
+        "icon": "test1",
         "downloadUrl": "/downloads/adblock.zip",
         "tags": ["privacy", "performance", "security"]
     },
     {
-        "id": "font-changer",
-        "name": "Font Changer",
+        "id": "nodefaultfonts",
+        "name": "NoDefualtFonts",
         "version": "1.0.0",
         "description": "Change the font on any website to your preferred typeface.",
-        "author": "Community Dev",
+        "author": "HelixPlugins",
         "icon": "🔤",
         "downloadUrl": "/downloads/font-changer.zip",
         "tags": ["customization", "accessibility"]
     },
     {
-        "id": "screenshot-tool",
-        "name": "Screenshot Tool",
-        "version": "1.1.0",
+        "id": "easyshots",
+        "name": "EasyShots",
+        "version": "1.0.0",
         "description": "Capture full-page screenshots with one click. Save or share instantly.",
         "author": "Helix Team",
         "icon": "📸",
@@ -40,11 +40,11 @@
         "tags": ["tools", "sharing"]
     },
     {
-        "id": "reader-mode",
-        "name": "Reader Mode",
+        "id": "lightreader",
+        "name": "Lightreader",
         "version": "1.0.0",
         "description": "Strip away clutter and read articles in a clean, distraction-free layout.",
-        "author": "Community Dev",
+        "author": "HelixPlugins",
         "icon": "📖",
         "downloadUrl": "/downloads/reader-mode.zip",
         "tags": ["reading", "productivity"]
