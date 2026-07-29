@@ -1,0 +1,17 @@
+/* Hide common ad containers */
+[class*="ad"],
+[class*="advertisement"],
+[class*="ads"],
+[id*="ad"],
+[id*="banner"],
+[id*="google_ads"],
+.adsbygoogle,
+.ad-container,
+.ad-wrapper {
+  display: none !important;
+  height: 0 !important;
+  width: 0 !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
