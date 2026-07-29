@@ -1,9 +1,0 @@
-{
-  "name": "No More Ads",
-  "version": "1.0.0",
-  "description": "Block annoying ads and trackers for faster, cleaner browsing.",
-  "matches": ["*://*/*"],
-  "css": ["style.css"],
-  "js": ["script.js"],
-  "enabled": true
-}
