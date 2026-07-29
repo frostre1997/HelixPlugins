@@ -1,9 +1,0 @@
-{
-  "name": "Lightreader",
-  "version": "1.0.0",
-  "description": "Strip away clutter and read articles in a clean, distraction-free layout.",
-  "matches": ["*://*/*"],
-  "css": ["style.css"],
-  "js": ["script.js"],
-  "enabled": true
-}

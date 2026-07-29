@@ -1,9 +1,0 @@
-{
-  "name": "Darkmoder",
-  "version": "1.0.0",
-  "description": "Force dark theme on every website. Inverts colors and reduces eye strain.",
-  "matches": ["*://*/*"],
-  "css": ["style.css"],
-  "js": ["script.js"],
-  "enabled": true
-}
