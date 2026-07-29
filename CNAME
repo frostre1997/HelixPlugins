@@ -1,6 +1,2 @@
-Field Value
-Type CNAME
-Name helix
-Target helixplugins.pages.dev
-Proxy status ✅ Orange cloud (Proxied) – turn it ON
-TTL Auto (or leave default) 
+helix
+helixplugins.onrender.com
