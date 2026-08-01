@@ -11,199 +11,78 @@
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧬</text></svg>" />
 </head>
 <body>
-    <!-- Top banner (like Render's "Switching clouds?" banner) -->
-    <div class="flex w-full flex-col justify-between gap-12 px-12 py-8 text-body-xs text-white sm:flex-row sm:items-center md:justify-center print:hidden bg-gradient-to-r from-purple-900 via-purple-800 to-orange-300 dark:from-purple-900 dark:via-green-500 dark:to-lime-100">
-        <p class="inline-block leading-snug">Discover powerful plugins for your browser.</p>
-        <a class="flex h-26 w-fit items-center gap-10 bg-gray-900 px-10 font-medium text-white" href="#">
-            <span>Explore Plugins</span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11" fill="none">
-                <path d="M0.875 10.591L0 9.72736L4 5.50009L0 1.28418L0.875 0.40918L5.96591 5.50009L0.875 10.591Z" fill="white"/>
-            </svg>
-        </a>
+    <!-- Top Banner (Render style) -->
+    <div style="background: linear-gradient(to right, #7c3aed, #f97316); color: white; padding: 8px 24px; text-align: center; font-size: 14px; display: flex; justify-content: center; align-items: center; gap: 12px; flex-wrap: wrap;">
+        <span>Discover powerful plugins for your browser.</span>
+        <a href="#" style="background: #0a0a0a; color: white; padding: 4px 16px; border-radius: 4px; font-weight: 500; text-decoration: none;">Explore Plugins →</a>
     </div>
 
-    <!-- Header (exact Render layout) -->
-    <header class="sticky top-0 z-[100] border-gray-900 border-b-1 bg-background text-[15px] text-text-primary leading-[112%] lg:text-[16px] dark:border-gray-100 print:hidden">
-        <div class="site-container grid grid-cols-3 items-center">
-            <div class="flex items-center lg:pl-20">
-                <a href="/">
-                    <svg width="110" height="21" viewBox="0 0 110 21" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Helix" class="fill-current">
-                        <!-- Replace with your logo SVG or text -->
-                        <text x="0" y="16" font-family="Inter, sans-serif" font-weight="700" font-size="20" fill="currentColor">Helix</text>
-                    </svg>
-                </a>
-                <nav class="hidden whitespace-nowrap lg:pl-20 xl:pl-60 lg:block">
-                    <ul class="flex items-center">
-                        <li><a class="group relative z-[1] inline-flex cursor-pointer transition-colors text-body-sm text-text-primary px-[--nav-bar-px] py-[--nav-bar-py]" href="#">Plugins</a></li>
-                        <li><a class="group relative z-[1] inline-flex cursor-pointer transition-colors text-body-sm text-text-primary px-[--nav-bar-px] py-[--nav-bar-py]" href="#">Docs</a></li>
-                        <li><a class="group relative z-[1] inline-flex cursor-pointer transition-colors text-body-sm text-text-primary px-[--nav-bar-px] py-[--nav-bar-py]" href="#">Community</a></li>
-                    </ul>
-                </nav>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                    <path d="M2 17l10 5 10-5"/>
+                    <path d="M2 12l10 5 10-5"/>
+                </svg>
+                <h1>Helix <span>Plugins</span></h1>
             </div>
-            <div class="flex justify-center"></div>
-            <div class="flex items-center justify-end whitespace-nowrap">
-                <a class="group relative z-[1] inline-flex cursor-pointer transition-colors text-body-sm pointer-events-none text-transparent hidden whitespace-nowrap px-[--nav-bar-px] xl:py-[--nav-bar-py] [@media(min-width:400px)]:block" href="#">Sign In</a>
-                <a class="ease group relative z-[1] cursor-pointer bg-background--inverted px-20 py-15 transition-colors motion-safe:duration-300 motion-reduce:duration-0 lg:px-30 lg:py-24 text-transparent ml-10 xl:ml-20 whitespace-nowrap" href="#">Get Started</a>
+            <nav>
+                <a href="#">Plugins</a>
+                <a href="#">Docs</a>
+                <a href="#">Community</a>
+            </nav>
+            <div class="header-actions">
+                <a href="#" class="btn-signin">Sign In</a>
+                <a href="#" class="btn-getstarted">Get Started</a>
             </div>
         </div>
     </header>
 
-    <!-- Hero (exact Render hero with grid background) -->
-    <div class="site-container bordered">
-        <div class="grid-cols-16 border-b from-purple-900 to-20% to-transparent max-lg:px-15 max-lg:py-[48px] lg:grid dark:bg-gradient-to-br">
-            <div class="col-span-8 col-start-2 my-auto space-y-60 lg:py-[--column-size]">
-                <div class="space-y-40 2xl:whitespace-pre-wrap">
-                    <h1 class="font-roobert text-heading-lg-new lg:text-display-lg">Your browser, <span class="mr-12 bg-gradient-to-r from-purple-600 to-orange-400 bg-clip-text text-transparent dark:from-purple-500 dark:to-green-100">extended.</span></h1>
-                    <div class="font-montreal text-body-lg-new lg:text-body-xl-new text-text-secondary lg:max-w-[calc(var(--column-size)*6)]">Install plugins to add features, block ads, and customize your experience.</div>
-                </div>
-                <div class="flex gap-12 max-md:flex-col md:gap-20">
-                    <a class="ease transition-colors group relative z-[1] flex cursor-pointer items-center overflow-hidden font-montreal whitespace-nowrap justify-between motion-safe:duration-150 motion-reduce:duration-0 lg:motion-safe:duration-300 lg:motion-reduce:duration-0 bg-background--inverted text-text-primary--inverted dark:lg:hover:text-white dark:active:text-white dark:focus-visible:text-white h-[70px] text-body-lg py-20 px-24 gap-15 lg:[--button-arrow-offset:2px]" href="#">
-                        <span class="ease pointer-events-none absolute inset-0 z-[0] block h-full w-full opacity-0 transition-opacity group-focus-visible:opacity-100 group-active:opacity-100 origin-right lg:scale-x-0 lg:opacity-100 lg:transition-transform lg:group-active:origin-left lg:group-active:scale-x-100 lg:group-focus-visible:origin-left lg:group-focus-visible:scale-x-100 lg:group-hover:origin-left lg:group-hover:scale-x-100 motion-safe:duration-150 motion-reduce:duration-0 lg:motion-safe:duration-300 lg:motion-reduce:duration-0 bg-purple-600"></span>
-                        <span class="ease relative z-[1] inline-block motion-safe:duration-150 motion-reduce:duration-0 lg:motion-safe:duration-300 lg:motion-reduce:duration-0 translate-x-0 lg:transition-transform group-hover:motion-safe:translate-x-[--button-arrow-offset]">Browse Plugins</span>
-                        <svg class="ease relative z-[1] translate-x-0 lg:transition-transform group-hover:motion-safe:-translate-x-[--button-arrow-offset] motion-safe:duration-150 motion-reduce:duration-0 lg:motion-safe:duration-300 lg:motion-reduce:duration-0 size-15 rotate-0 transform" xmlns="http://www.w3.org/2000/svg" width="12" height="20" viewBox="0 0 12 20" fill="none">
-                            <rect x="8" y="8" width="4" height="4" fill="currentColor"/>
-                            <rect x="4" y="4" width="4" height="4" fill="currentColor"/>
-                            <rect width="4" height="4" fill="currentColor"/>
-                            <rect x="4" y="12" width="4" height="4" fill="currentColor"/>
-                            <rect y="16" width="4" height="4" fill="currentColor"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-            <div class="relative col-span-7 col-start-10 mb-[--column-size] pl-[--column-size] max-lg:hidden">
-                <!-- Decorative grid lines (like Render) -->
-                <div class="flex justify-end">
-                    <div class="size-[--column-size] border-b" aria-hidden="true"></div>
-                    <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                    <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                </div>
-                <div class="flex justify-end">
-                    <div class="size-[--column-size] border-b" aria-hidden="true"></div>
-                    <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                    <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                    <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                </div>
-                <div class="flex justify-end">
-                    <div class="size-[--column-size] border-l" aria-hidden="true"></div>
-                    <div class="size-[--column-size] border-l" aria-hidden="true"></div>
-                    <div class="size-[--column-size] border-l" aria-hidden="true"></div>
-                    <div class="size-[--column-size] border-l" aria-hidden="true"></div>
-                </div>
-                <div class="ml-[--column-size] aspect-[45/32] border border-r-0"></div>
-                <div class="relative">
-                    <div class="absolute bottom-full left-0">
-                        <div class="size-[--column-size] border-b" aria-hidden="true"></div>
-                        <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                    </div>
-                    <div class="flex">
-                        <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                        <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                        <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                        <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                        <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                        <div class="size-[--column-size] border-b border-l" aria-hidden="true"></div>
-                    </div>
-                </div>
-            </div>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Your browser, <span class="highlight">extended.</span></h1>
+        <p>Install plugins to add features, block ads, and customize your experience.</p>
+        <a href="#" class="btn-primary">Browse Plugins</a>
+    </section>
+
+    <!-- Stats -->
+    <div class="stats">
+        <div class="stat-item">
+            <span class="stat-number" id="pluginCount">0</span>
+            <span class="stat-label">Plugins</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" id="downloadCount">0</span>
+            <span class="stat-label">Downloads</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number">⚡</span>
+            <span class="stat-label">Fast &amp; Light</span>
         </div>
     </div>
 
-    <!-- Stats section (like Render's "Trusted by" but with plugin stats) -->
-    <div class="flex w-full flex-col gap-32 overflow-x-hidden border-border border-b-1 py-40 text-center md:py-72">
-        <div class="font-mono text-overline-lg uppercase px-15 text-center text-gray-500 uppercase dark:text-gray-300">Join the Helix ecosystem</div>
-        <div class="flex flex-wrap justify-center px-[--column-size]">
-            <div class="relative w-1/2 p-20 sm:w-1/3 md:w-1/4 lg:w-1/5" style="opacity:1">
-                <div class="relative h-40 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-purple-600" id="pluginCount">0</span>
-                    <span class="ml-2 text-gray-500">plugins</span>
-                </div>
-            </div>
-            <div class="relative w-1/2 p-20 sm:w-1/3 md:w-1/4 lg:w-1/5" style="opacity:1">
-                <div class="relative h-40 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-purple-600" id="downloadCount">0</span>
-                    <span class="ml-2 text-gray-500">downloads</span>
-                </div>
-            </div>
-            <div class="relative w-1/2 p-20 sm:w-1/3 md:w-1/4 lg:w-1/5" style="opacity:1">
-                <div class="relative h-40 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-purple-600">⚡</span>
-                    <span class="ml-2 text-gray-500">fast & light</span>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Plugin Grid (styled like Render's feature cards) -->
-    <div class="site-container bordered py-12">
-        <div class="grid gap-x-40 gap-y-30 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="pluginGrid">
+    <!-- Plugin Grid -->
+    <div class="container">
+        <div class="plugin-grid" id="pluginGrid">
             <div class="loading">Loading plugins...</div>
         </div>
     </div>
 
-    <!-- Footer (exact Render footer layout) -->
-    <footer class="print:hidden">
-        <div class="site-container bordered">
-            <div class="relative flex flex-col border-b-1 bg-grid bg-grid-border pt-[calc(100vw/8)] pl-[calc(100vw/8)] lg:grid lg:grid-cols-16 lg:grid-rows-12 lg:pt-0 lg:pb-0 lg:pl-0 xl:grid-rows-10">
-                <!-- decorative grid (simplified) -->
-                <div class="relative z-2 col-span-14 col-start-3 row-span-10 row-start-2 bg-gray-800 lg:p-0 xl:row-span-8 xl:row-start-2">
-                    <div class="flex h-full w-full flex-col border-gray-700 bg-gray-800 text-white lg:border-t-1">
-                        <div class="grid w-full grid-cols-1 flex-col gap-[75px] border-gray-700 border-t-1 p-40 sm:p-60 lg:border-t-0 lg:px-0 lg:pt-[--column-size] sm:grid-cols-3 lg:grid-cols-6 lg:gap-x-40 lg:gap-y-0 lg:px-40">
-                            <div class="col-span-1">
-                                <div class="flex flex-col gap-40">
-                                    <div>
-                                        <div class="typography text-caption-01 font-montreal pb-20 uppercase">Plugins</div>
-                                        <ul class="flex flex-col gap-16 text-body-sm">
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">Featured</a></li>
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">Popular</a></li>
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">New</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-span-1">
-                                <div class="flex flex-col gap-40">
-                                    <div>
-                                        <div class="typography text-caption-01 font-montreal pb-20 uppercase">Resources</div>
-                                        <ul class="flex flex-col gap-16 text-body-sm">
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">Docs</a></li>
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">API</a></li>
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">GitHub</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-span-1">
-                                <div class="flex flex-col gap-40">
-                                    <div>
-                                        <div class="typography text-caption-01 font-montreal pb-20 uppercase">Community</div>
-                                        <ul class="flex flex-col gap-16 text-body-sm">
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">Discord</a></li>
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">Twitter</a></li>
-                                            <li><a class="ease text-gray-500 transition-colors duration-300 active:text-white md:hover:text-white" href="#">Blog</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Made with ❤️ for <strong>Helix Browser</strong></p>
+            <div class="footer-links">
+                <a href="#">Submit</a>
+                <a href="#">Docs</a>
+                <a href="#">Community</a>
             </div>
-        </div>
-        <div class="site-container">
-            <div class="justify-end px-15 py-[24px] lg:grid lg:grid-cols-16 lg:px-0">
-                <div class="col-span-14 col-start-2 flex flex-col gap-15 text-caption-01 lg:flex-row lg:items-center lg:justify-between lg:text-body-sm">
-                    <ul class="flex flex-wrap items-center gap-15 text-gray-900">
-                        <li><a class="group relative z-[1] inline-flex cursor-pointer transition-colors text-body-sm text-text-primary" href="#">Twitter</a></li>
-                        <li><a class="group relative z-[1] inline-flex cursor-pointer transition-colors text-body-sm text-text-primary" href="#">GitHub</a></li>
-                    </ul>
-                    <ul class="flex flex-wrap items-center gap-15">
-                        <li class="flex basis-full text-body-sm sm:inline sm:basis-[initial]">© Helix 2026</li>
-                    </ul>
-                </div>
-            </div>
+            <p class="footer-copy">&copy; 2026 Helix Browser</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-                    </html>
+    </html>
